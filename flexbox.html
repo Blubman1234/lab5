@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web tech L05 - CSS Flexbox</title>
+	<link rel="stylesheet" href="flexbox_example.css">
+</head>
+<body>
+	<header>
+		<h1>Week 5 - CSS Page Layout</h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="flexbox.html">Flexbox</a>
+	</nav>
+	<main>
+	
+		<section>
+			<header>
+				<h2>CSS Flexbox</h2>
+			</header>
+			<p>
+				Flexbox is a layout model that is based in one dimension instead of two(like with Grid Layout). This means when placing an object you have to specifiy one dimension at a time.
+			</p>
+		</section>
+		
+		<section>
+			<header>
+				<h3>example</h3>
+			</header>
+			<p>
+				In this example we are creating a series of horizontaly placed boxes that will be rearranged when the page window is resized
+			</p>
+			
+			<figure>
+				<figcaption>html code</figcaption>
+				<img src="images/flexbox_html_example.png"/>
+			</figure>
+			<p>note that the classes flex container and flex item are simply to tie the css to these element. The names of the classes dont effect anything as the functionality comes from the CSS</p>
+			
+			<figure>
+				<figcaption>css code</figcaption>
+				<img src="images/flexbox_css_example.png"/>
+			</figure>
+			<p>Most of the css here is just to make the boxes look nice. The properties that effects the flexbox are:</p>
+			<ul>
+				<li><i>display: flex;</i> this shows that the display mode is flex</li>
+				<li><i>flex-flow: row wrap;</i> this set the direction of the flex to row (placing each element in a row) and tells the container to wrap
+												(keeps the elements inside the container and in the correct order)</li>
+				<li><i>justify-content: space-around;</i> this tells the container to add space around each element inside it</li>
+			</ul>
+			<article>
+				<h4>demo</h4>
+				<ul class="flex-container">
+					<li class="flex-item">1</li>
+					<li class="flex-item">2</li>
+					<li class="flex-item">3</li>
+					<li class="flex-item">4</li>
+					<li class="flex-item">5</li>
+					<li class="flex-item">6</li>
+				</ul>
+			</article>	
+		</section>
+		
+		<section>
+			<header>
+				<h3>Further Notes</h3>
+			</header>
+			<p>The other options for flex-flow directions are : <i>collumn</i> where the elements are orginised virtically</p> 
+			<p>The other options for flex-flow wrap are:</p>
+			<ul>
+				<li><i>no-wrap</i> - this means that the elements are all forced on one line </li>
+				<li><i>wrap-reverse</i> - this means that the order of the lines the elements are placed on is reversed</li>
+			
+		</section>
+		
+	</main>
+</body>
+</html>
