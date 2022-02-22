@@ -26,7 +26,7 @@
 		
 		<section>
 			<header>
-				<h3>example</h3>
+				<h3>example 1</h3>
 			</header>
 			<p>
 				In this example we are creating a series of horizontaly placed boxes that will be rearranged when the page window is resized
@@ -64,13 +64,59 @@
 		
 		<section>
 			<header>
+				<h3>example 2</h3>
+			</header>
+			<p> This example shows how you can use flexbox to make a nice UI</p>
+			
+			<figure>
+				<figcaption>html code</figcaption>
+				<img src="images/flexbox_html_example2.png"/>
+			</figure>
+			
+			<figure>
+				<figcaption>css code</figcaption>
+				<img src="images/flexbox_css_example2.png"/>
+			</figure>
+			<p>you can see we have added the rule <i>@media</i> which allows us to change the style of the elements dependent on the width of the screen. we are 
+				also using the new rule <i>order</i> which allows us to effect the order the elements are placed onto the screen e.g. for this example if the screen is 
+				large (800px) aside-1 is placed before main, however if the screen is smaller (600px) the elements are placed in the order specified in the html (main, aside-1, aside-2).
+				the final new rule is <i>flex</i> which shows how the elements grow in comparison to other elements in the flex container</p>
+			
+			<h4>demo</h4>
+			<div class="wrapper">
+				<header class="header">Header</header>
+				<article class="main">
+					<p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+						ac turpis egestas . Vestibulum tortor quam , feugiat vitae , ultricies eget ,
+						tempor sit amet , ante . Donec eu libero sit amet quam egestas semper . Aenean
+						ultricies mi vitae est . Mauris placerat eleifend leo .</p>
+				</article>
+				<aside class="aside aside-1">Aside 1</aside>
+				<aside class="aside aside-2">Aside 2</aside>
+				<footer class="footer">Footer</footer>
+			</div>
+			
+		</section>
+		
+		<section>
+			<header>
 				<h3>Further Notes</h3>
 			</header>
-			<p>The other options for flex-flow directions are : <i>collumn</i> where the elements are orginised virtically</p> 
-			<p>The other options for flex-flow wrap are:</p>
+			
 			<ul>
-				<li><i>no-wrap</i> - this means that the elements are all forced on one line </li>
-				<li><i>wrap-reverse</i> - this means that the order of the lines the elements are placed on is reversed</li>
+				<li>The other options for flex-flow directions are : <i>collumn</i> where the elements are orginised virtically</li>
+				<li>The other options for flex-flow wrap are:
+					<ul>
+						<li><i>no-wrap</i> - this means that the elements are all forced on one line </li>
+						<li><i>wrap-reverse</i> - this means that the order of the lines the elements are placed on is reversed</li>
+					</ul></li>
+				<li>the options for the <i>flex</i> property (in order) are: 
+					<ul>
+						<li><i>flex-grow</i>- a number that shows how much a element should stretch compared to other elements i.e if one element is flex : 3 0 0 and others are flex : 1 the first will be 3 times larger</li>
+						<li><i>flex-shrink</i>- how much an element will shrink compared to others </li>
+						<li><i>flex-basis</i>- the baseline length of the item</li>
+					</ul></li>
+			</ul>
 			
 		</section>
 		
